@@ -1,0 +1,58 @@
+
+
+
+
+ALGORITHM The length of the sentence
+VAR
+    s:STRING
+    i:INTEGER
+
+BEGIN
+  
+    Read(s)
+    i=s.length
+    Write(i)
+    
+END
+
+
+
+ALGORITHM The number of words
+VAR
+    s:STRING
+    i:INTEGER
+    n:INTEGER
+    
+BEGIN
+    Read(s)
+    FOR i FROM 0 TO s.length   DO
+        IF ((s(i)=' ') or (s(i)='.')) THEN
+            n=n+1
+        END_IF   
+    END_FOR
+    Write(n)
+END
+
+
+
+   
+ALGORITHM The number of vowels
+VAR
+    s:STRING
+    i:INTEGER
+    n:INTEGER
+    
+BEGIN
+    Read(s)
+    FOR i FROM 0 TO s.length   DO
+        IF ((s(i)='i') or (s(i)='o') or (s(i)='a') or (s(i)='e') or (s(i)='u') or (s(i)='y') ) THEN
+            n=n+1
+        END_IF   
+    END_FOR
+    Write(n)
+END
+
+
+
+
+
